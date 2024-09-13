@@ -1,0 +1,3 @@
+float32 angular_pos
+float32 angular_vel
+float32 angular_acc
