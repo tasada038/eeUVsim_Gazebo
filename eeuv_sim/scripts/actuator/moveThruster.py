@@ -135,15 +135,15 @@ class MoveThruster(Node):
 
     def euler_to_rotation_matrix(self, roll, pitch, yaw):
         """
-        オイラー角を回転行列に変換する関数。
+        Function to convert Euler angles to a rotation matrix.
         
-        Parameters:
-        roll (float): ロール角（度単位）。
-        pitch (float): ピッチ角（度単位）。
-        yaw (float): ヨー角（度単位）。
+        Parameters: roll (float)
+        roll (float): Roll angle in degrees
+        pitch (float): pitch angle in degrees
+        yaw (float): Yaw angle in degrees
         
-        Returns:
-        rotation_matrix: 回転行列（3x3のnumpy配列）。
+        Returns: rotation_matrix: rotation matrix
+        rotation_matrix: rotation matrix (3x3 numpy array).
         """
         roll_rad = math.radians(roll)
         pitch_rad = math.radians(pitch)
@@ -205,7 +205,6 @@ class MoveThruster(Node):
             
             # Calculate moment in the body frame
             # Clockwise rotation is positive
-            #moment_body = np.cross(position_body, force_body)
             moment_pitch = position_body[0] * force_body[2] - position_body[2] * force_body[0]
             moment_yaw = position_body[1] * force_body[0] - position_body[0] * force_body[1]
             moment_roll = position_body[2] * force_body[1] - position_body[1] * force_body[2]
