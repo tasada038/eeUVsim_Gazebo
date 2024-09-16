@@ -41,7 +41,7 @@ class MoveFins(Node):
         yaml_dynamics = self.get_parameter('yaml_dynamics').value
 
         parameters_from_yaml = os.path.join(
-                get_package_share_directory('uw_gazebo'),
+                get_package_share_directory('eeuv_sim'),
                 'data', 'dynamics',
                 yaml_dynamics
                 )
@@ -49,7 +49,7 @@ class MoveFins(Node):
         self.declare_parameter('rl_setting_yaml', 'rl_setting.yaml')
         yaml_rl = self.get_parameter('rl_setting_yaml').value
         parameters_rl = os.path.join(
-                get_package_share_directory('uw_gazebo'),
+                get_package_share_directory('eeuv_sim'),
                 'data', 'rl_setting',
                 yaml_rl
                 )

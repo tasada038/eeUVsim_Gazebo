@@ -25,7 +25,7 @@ def generate_launch_description():
     robot_model = 'microcat'
 
     # Path to package definition
-    uw_gazebo_path = get_package_share_directory('uw_gazebo')
+    uw_gazebo_path = get_package_share_directory('eeuv_sim')
 
     # Setting GAZEBO_MODEL_PATH so that Gazebo knows where to find the defined models
     os.environ['GAZEBO_MODEL_PATH'] = uw_gazebo_path + '/models'

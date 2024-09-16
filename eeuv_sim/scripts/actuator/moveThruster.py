@@ -32,7 +32,7 @@ class MoveThruster(Node):
 
         yaml_dynamics = self.get_parameter('yaml_dynamics').value
         parameters_from_yaml = os.path.join(
-                get_package_share_directory('uw_gazebo'),
+                get_package_share_directory('eeuv_sim'),
                 'data', 'dynamics',
                 yaml_dynamics
                 )

@@ -11,7 +11,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     ucat_hardware_interface = Node(
-        package='uw_gazebo',  
+        package='eeuv_sim',  
         executable='microcatHardwareInterface.py',
         name='ros_arduino_interface',
         output='screen',
