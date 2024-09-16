@@ -6,7 +6,7 @@
   <!-- Provide the propeller mesh in a separate file with the rotation axis
   over propeller's frame X-axis in DAE (Collada) or STL format.
   -->
-  <xacro:property name="prop_mesh_file" value="file://$(find uw_gazebo)/urdf/meshes/LAUV/propeller.dae"/>
+  <xacro:property name="prop_mesh_file" value="file://$(find eeuv_sim)/urdf/meshes/LAUV/propeller.dae"/>
 
   <!--
     Thruster macro with integration of joint and link. The thrusters should
@@ -164,8 +164,8 @@
   <!-- MACRO FOR FIN/RUDDER UNITS  -->
   
   <!-- A separate mesh for the fin should be stored in the meshes folder -->
-  <xacro:property name="black_fin_mesh_file" value="file://$(find uw_gazebo)/urdf/meshes/LAUV/black_fin.dae"/>
-  <xacro:property name="red_fin_mesh_file" value="file://$(find uw_gazebo)/urdf/meshes/LAUV/red_fin.dae"/>
+  <xacro:property name="black_fin_mesh_file" value="file://$(find eeuv_sim)/urdf/meshes/LAUV/black_fin.dae"/>
+  <xacro:property name="red_fin_mesh_file" value="file://$(find eeuv_sim)/urdf/meshes/LAUV/red_fin.dae"/>
 
   <!-- Fin properties -->
   <xacro:property name="fin_area" value="0.0064"/>

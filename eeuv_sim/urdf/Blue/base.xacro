@@ -5,7 +5,7 @@
   <xacro:property name="mass" value="11"/>
   <xacro:property name="cog" value="0 0 0"/>
   <xacro:property name="rho" value="1028"/>
-  <xacro:property name="visual_mesh_file" value="file://$(find uw_gazebo)/urdf/meshes/Blue/brov2_heavy_body.dae"/>
+  <xacro:property name="visual_mesh_file" value="file://$(find eeuv_sim)/urdf/meshes/Blue/brov2_heavy_body.dae"/>
 
   <link name="base_link">
   </link>

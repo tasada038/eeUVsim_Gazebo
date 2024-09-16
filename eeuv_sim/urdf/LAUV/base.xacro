@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <robot name="LAUV" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <!-- Loading some constants -->
- <!-- <xacro:include filename="$(find uw_gazebo)/urdf/LAUV/common.urdf.xacro"/> -->
+ <!-- <xacro:include filename="$(find eeuv_sim)/urdf/LAUV/common.urdf.xacro"/> -->
   <!-- Loading file with sensor macros -->
-  <!-- <xacro:include filename="$(find uw_gazebo)/urdf/LAUV/sensor_snippets.xacro"/> -->
+  <!-- <xacro:include filename="$(find eeuv_sim)/urdf/LAUV/sensor_snippets.xacro"/> -->
   <!-- Loading the UUV simulator ROS plugin macros -->
-  <!--<xacro:include filename="$(find uw_gazebo)/urdf/LAUV/snippets.xacro"/> -->
+  <!--<xacro:include filename="$(find eeuv_sim)/urdf/LAUV/snippets.xacro"/> -->
   <!-- Loading vehicle's specific macros -->
-  <xacro:include filename="$(find uw_gazebo)/urdf/LAUV/common.xacro"/>
-  <xacro:include filename="$(find uw_gazebo)/urdf/LAUV/snippets.xacro"/>
-  <xacro:include filename="$(find uw_gazebo)/urdf/LAUV/gazebo.xacro"/>
+  <xacro:include filename="$(find eeuv_sim)/urdf/LAUV/common.xacro"/>
+  <xacro:include filename="$(find eeuv_sim)/urdf/LAUV/snippets.xacro"/>
+  <xacro:include filename="$(find eeuv_sim)/urdf/LAUV/gazebo.xacro"/>
 
   <!--
     Vehicle's parameters (remember to enter the model parameters below)
@@ -28,7 +28,7 @@
     the mesh pose will have to be corrected below in the <visual> block.
     Open the meshes for the RexROV vehicle in Blender to see an example on the mesh placement.
   -->
-  <xacro:property name="visual_mesh_file" value="file://$(find uw_gazebo)/urdf/meshes/LAUV/body.dae"/>
+  <xacro:property name="visual_mesh_file" value="file://$(find eeuv_sim)/urdf/meshes/LAUV/body.dae"/>
 
   <!-- Collision geometry mesh, usually in STL format (it is recommended to keep
   this geometry as simple as possible to improve the performance the physics engine
@@ -70,10 +70,10 @@
     <!-- Set up hydrodynamic plugin given as input parameter -->
 
     <!-- Include the thruster modules -->
-    <!-- <xacro:include filename="$(find uw_gazebo)/urdf/LAUV/actuators.xacro"/> -->
+    <!-- <xacro:include filename="$(find eeuv_sim)/urdf/LAUV/actuators.xacro"/> -->
 
     <!-- Include the sensor modules -->
-    <!-- <xacro:include filename="$(find uw_gazebo)/urdf/LAUV/sensors.xacro"/> -->
+    <!-- <xacro:include filename="$(find eeuv_sim)/urdf/LAUV/sensors.xacro"/> -->
   <gazebo>
     <plugin name="libgazebo_ros_p3d" filename="libgazebo_ros_p3d.so">
         <ros>
