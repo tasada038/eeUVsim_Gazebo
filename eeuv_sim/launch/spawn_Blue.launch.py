@@ -2,8 +2,8 @@
 """
 UCAT simulation launch file.
 
-@author: Walid Remmas
-@contact: walid.remmas@ŧaltech.ee
+@author: Yuya Hamamatsu
+@contact: yuya.hamamatsu@ŧaltech.ee
 """
 
 import os

@@ -2,8 +2,8 @@
 
 """
 Node to update the robot's pose in Gazebo based on AUV dyanmics
-@author: Walid Remmas
-@contact: walid.remmas@taltech.ee
+@author: Yuya Hamamatsu, Walid Remmas
+@contact: yuya.hamamatsu@taltech.ee
 """
 
 import rclpy
