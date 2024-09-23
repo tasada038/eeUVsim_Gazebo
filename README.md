@@ -1,2 +1,27 @@
-# eeUVsim_Gazebo
-ROS2 gazebo simulator for underwater robots, including robot model, dynamics, controller, RL stuffs.
+# eeUVsim_Gazebo: Learning friendly ROS2 AUV simulator
+**Now the related paper is under the review, official release is after the decision**
+
+![image](https://github.com/hama6767/pubdata/blob/main/Peek%202024-09-23%2013-52.gif?raw=true)
+
+It Fossen' physics model based multiple platform simulator including dynamics, reinforcement learning script, robot models, actuator models.
+
+# Installation
+### Tested environment
+| Ubuntu version                  | ROS2 Version | Comment                                                  |
+| -------------------------- | ------- | ------------------------------------------------------------ |
+| 22.04                  | Humble   |  Recommnded                                                            |
+| 20.04                  | Galactic   |                                                              |
+
+### Depended libraries
+| Package                                                      | Version      | Comment                                                      |
+| ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ |
+| Python                                                       | 3.10         | Basically should work with ubuntu default version            |
+| ROS2                                                         | (Above)      |                                                              |
+| Gazebo                                                       | 11 (Classic) | It is **only used for visualization without physics**        |
+| Gym                                                          | 0.26.2       | It used for the reinforcement learing environment            |
+| Stable-baselines3                                            | 2.3.2        | Used to train reinforcement learning agent                   |
+| sb3_contrib                                                  | 2.3.0        | Used for LSTM-PPO training                                   |
+
+### Install
+TODO git clone and move dir and colcon build
+
