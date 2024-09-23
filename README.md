@@ -1,9 +1,14 @@
 # eeUVsim: Learning friendly ROS2 AUV simulator
 **Now the related paper is under the review, official release is after the decision**
+Fossen' physics model based multiple platform simulator including dynamics, reinforcement learning script, robot models, actuator models.
 
+eeUVsim has task oriented RL training script with randomize and repeating function
 ![image](https://github.com/hama6767/pubdata/blob/main/Peek%202024-09-23%2013-52.gif?raw=true)
 
-It Fossen' physics model based multiple platform simulator including dynamics, reinforcement learning script, robot models, actuator models.
+The training environment is impelemted based on ros2 pub-sub method as actual robot software basically has. Then it is easy to transfer to real robot from simulator.
+![image](https://github.com/hama6767/pubdata/blob/main/Peek%202024-09-23%2015-22.gif?raw=true)
+
+
 
 # Installation
 ### Tested environment
