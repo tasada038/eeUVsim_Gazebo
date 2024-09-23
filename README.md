@@ -1,4 +1,4 @@
-# eeUVsim_Gazebo: Learning friendly ROS2 AUV simulator
+# eeUVsim: Learning friendly ROS2 AUV simulator
 **Now the related paper is under the review, official release is after the decision**
 
 ![image](https://github.com/hama6767/pubdata/blob/main/Peek%202024-09-23%2013-52.gif?raw=true)
