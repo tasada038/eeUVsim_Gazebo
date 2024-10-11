@@ -27,6 +27,12 @@ The training environment is impelemted based on ros2 pub-sub method as actual ro
 | Stable-baselines3                                            | 2.3.2        | Used to train reinforcement learning agent                   |
 | sb3_contrib                                                  | 2.3.0        | Used for LSTM-PPO training                                   |
 
-### Install
-TODO git clone and move dir and colcon build
+### Quick start
+In UCAT case, you can launch fundamental scripts (motion controller, dynamics, robot model) with this command.
+
+`ros2 launch eeuv_sim spawn_UCAT.launch.py`
+
+When you want to train surfacing controller, you can run
+
+`RL_UCAT.py`
 
