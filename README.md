@@ -34,5 +34,7 @@ In UCAT case, you can launch fundamental scripts (motion controller, dynamics, r
 
 When you want to train surfacing controller, you can run
 
-`RL_UCAT.py`
+`ros2 run eeuv_sim RL_UCAT.py`
+
+Then iterative training will start.
 
