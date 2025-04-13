@@ -1,0 +1,8 @@
+pandas
+gym
+opencv-python
+transforms3d
+stable-baselines3
+sb3-contrib
+shimmy>=2.0
+tensorboard

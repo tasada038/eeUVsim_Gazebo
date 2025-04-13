@@ -27,6 +27,12 @@ The training environment is impelemted based on ros2 pub-sub method as actual ro
 | Stable-baselines3                                            | 2.3.2        | Used to train reinforcement learning agent                   |
 | sb3_contrib                                                  | 2.3.0        | Used for LSTM-PPO training                                   |
 
+
+```sh
+cd ./src/eeUVsim_Gazebo
+pip install -r requirements.txt
+```
+
 ### Quick start
 In UCAT case, you can launch fundamental scripts (motion controller, dynamics, robot model) with this command.
 
@@ -34,7 +40,6 @@ In UCAT case, you can launch fundamental scripts (motion controller, dynamics, r
 
 When you want to train surfacing controller, you can run
 
-`ros2 run eeuv_sim RL_UCAT.py`
+`ros2 run eeuv_sim RL_UCAT.py -o`
 
 Then iterative training will start.
-

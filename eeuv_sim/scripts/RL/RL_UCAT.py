@@ -333,7 +333,7 @@ if __name__ == "__main__":
     parser.add_argument('-c', "--continue_training", type=str, help='Continue training the model')
     parser.add_argument("-o", "--use_occilation", action="store_true", help="Add occilation to the fins")
     parser.add_argument('-t', "--transfer_modoel", type=str, help='Transfer first layer weights from the model')
-    parser.add_argument('-t', "--transfer_2ndlayer", type=str, help='Transfer second layer additionally from the model')
+    # parser.add_argument('-t', "--transfer_2ndlayer", type=str, help='Transfer second layer additionally from the model')
 
     tp = lambda x:list(map(int, x.split('.')))
     parser.add_argument("-f", "--fix_fins", type=tp, help="Fix which fin broken. 1 for movable, 0 for fixed as 1.1.1.1")
