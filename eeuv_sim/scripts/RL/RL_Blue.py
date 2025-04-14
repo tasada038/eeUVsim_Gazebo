@@ -283,8 +283,8 @@ if __name__ == "__main__":
     parser.add_argument("-f", "--fix_actuators", type=tp, help="Fix which fin broken. 1 for movable, 0 for fixed as 1.1.1.1.1.1.1.1")
 
     args, _ = parser.parse_known_args()
-    if args.fix_fins:
-        str_brake = "".join(map(str, args.fix_fins))
+    if args.fix_actuators:
+        str_brake = "".join(map(str, args.fix_actuators))
     else:
         str_brake = "random"
     
@@ -301,7 +301,7 @@ if __name__ == "__main__":
     print(f"Model will be saved at {model_path_abs}")
 
     rclpy.init()
-    env = LearningLocomotion(args.fix_fins, log_data_path)
+    env = LearningLocomotion(args.fix_actuators, log_data_path)
 
 
     if args.continue_training:

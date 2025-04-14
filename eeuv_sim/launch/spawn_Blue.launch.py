@@ -65,20 +65,20 @@ def generate_launch_description():
 
 
     # Node to compute auv dynamics
-    auv_motion = Node(package='uw_gazebo', executable='AUVMotion.py',
+    auv_motion = Node(package='eeuv_sim', executable='AUVMotion.py',
                         parameters=[{'yaml_dynamics': "BlueDynamics.yaml",
                                      'robot_model': robot_model}],
                         output='screen')
     
     
     # Node to move thrusters
-    move_thruster = Node(package='uw_gazebo', executable='moveThruster.py',
+    move_thruster = Node(package='eeuv_sim', executable='moveThruster.py',
                         parameters=[{'yaml_dynamics': "BlueDynamics.yaml"}],
                         output='screen')
     
 
     # Node to compute auv dynamics
-    pressure = Node(package='uw_gazebo', executable='pressure.py',
+    pressure = Node(package='eeuv_sim', executable='pressure.py',
                         parameters=[{'robot_model': robot_model}],
                         output='screen')
 
@@ -91,7 +91,7 @@ def generate_launch_description():
         ),
         node_robot_state_publisher,
         spawn_entity,
-        pressure,
+        # pressure,
         auv_motion,
         move_thruster,
         ])

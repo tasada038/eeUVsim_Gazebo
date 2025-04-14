@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Fin snippet using the two lines lift and drag model -->
     <xacro:property name="fin_mass" value="0.5"/>
 
-    <xacro:macro name="fin" params="name *origin inertia_offset_x inertia_offset_y fin_mesh_file">
+    <xacro:macro name="fin"
+        params="name *origin inertia_offset_x inertia_offset_y fin_mesh_file">
         <!--  THIS LINK IS USED TO VISUALIZE FIN ROTATIONS -->
         <!-- *********************************************** -->
         <joint name="${name}_fin" type="revolute">
@@ -46,7 +49,4 @@
         </gazebo>
 
     </xacro:macro>
-
-
-
 </robot>
